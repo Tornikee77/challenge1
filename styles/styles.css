@@ -1,0 +1,134 @@
+body {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #80839740;
+}
+
+.background-container {
+  background-image: url("../assets/images/background.png");
+  height: 700px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 48px 0px;
+  margin: 0 auto;
+}
+.header-container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.header-container nav ul a {
+  color: #ffffff;
+}
+.header-container button {
+  width: 140px;
+  height: 56px;
+  border-radius: 50px;
+  border: none;
+}
+.intro-container {
+  display: flex;
+  justify-content: center;
+}
+.intro-container p {
+  padding-top: 105px;
+  font-size: 56px;
+  font-weight: 900;
+}
+.intro-container img {
+  height: 107px;
+  position: absolute;
+  top: 360px;
+}
+.transform-container {
+  display: flex;
+}
+.info-container {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  padding: 158px 110px 157px 165px;
+  gap: 40px;
+  background-color: #fff;
+
+}
+.info-container h2 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #24303e;
+  padding-bottom: 32px;
+  width: 300px;
+}
+.info-container p {
+  width: 450px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #808397;
+  line-height: 1.5;
+}
+.section-container img {
+  height: 600px;
+}
+.standout-container {
+  display: flex;
+}
+.grafic-photography {
+  display: flex;
+
+}
+.cherry-container {
+  position: relative;
+}
+.cherry-description {
+  position: absolute;
+  position: absolute;
+  top: 398px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.cherry-description h2{
+    font-size: 28px;
+    font-weight:#24554A;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 27px;
+}
+.cherry-description p{
+    color: #3E7467;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+.orange-container{
+    position: relative;
+}
+.orange-description{
+    position: absolute;
+    position: absolute;
+    top: 398px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.orange-description h2{
+    font-size: 28px;
+    font-weight:#19536C;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 27px;
+}
+.orange-description p{
+    color: #3E7467;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
