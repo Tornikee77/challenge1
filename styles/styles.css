@@ -6,6 +6,7 @@
   font-family: "Barlow";
   src: url(../assets/font/Barlow-Regular.ttf);
 }
+
 body {
   font-family: "Barlow";
   max-width: 1440px;
@@ -24,10 +25,10 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding: 35px 48px 0px;
-  margin: 0 auto;
+  padding: 34px 40px 105px;
 }
-.header-container nav ul {
+.header-container nav ul,
+a {
   display: flex;
   align-items: center;
   gap: 47px;
@@ -39,15 +40,20 @@ body {
   color: #ffffff;
 }
 .header-container button {
+  font-family: "Fraunces";
+  cursor: pointer;
   width: 140px;
   height: 56px;
   border-radius: 50px;
   border: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #24303e;
 }
 .intro-container {
-  font-family: "Fraunces";
   display: flex;
   justify-content: center;
+  font-family: "Fraunces";
 }
 .intro-container p {
   padding-top: 105px;
@@ -62,10 +68,19 @@ body {
 }
 .transform-container {
   display: flex;
+  width: 1440px;
+  height: 600px;
 }
+.section-container {
+  width: 1440px;
+}
+.section-container img {
+  width: 720px;
+}
+
 .info-container {
   display: flex;
-  width: 500px;
+  width: 720px;
   flex-direction: column;
   padding: 158px 110px 157px 165px;
   gap: 40px;
@@ -77,6 +92,7 @@ body {
   color: #24303e;
   padding-bottom: 32px;
   width: 300px;
+  font-family: "Fraunces";
 }
 .info-container p {
   width: 450px;
@@ -87,15 +103,18 @@ body {
 }
 .info-container a {
   color: #24303e;
+  width: 137px;
 }
-.section-container img {
-  height: 600px;
-}
+
 .standout-container {
   display: flex;
+  width: 1440px;
+  height: 600px;
 }
 .grafic-photography {
   display: flex;
+  width: 1440px;
+  height: 600px;
 }
 .cherry-container {
   position: relative;
@@ -113,6 +132,7 @@ body {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 27px;
+  font-family: "Fraunces";
 }
 .cherry-description p {
   color: #3e7467;
@@ -131,6 +151,7 @@ body {
   transform: translate(-50%, 0%);
 }
 .orange-description h2 {
+  font-family: "Fraunces";
   font-size: 28px;
   font-weight: #19536c;
   margin: 0 auto;
@@ -141,21 +162,29 @@ body {
   color: #3e7467;
   font-weight: 600;
   line-height: 1.5;
-
   text-align: center;
 }
+/* client advices */
 .clients {
   display: flex;
-  /* background-color: aqua; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
-  padding: 160px 165px 160px;
+  height: 777px;
   background-color: #fff;
 }
-.title-container {
-  margin: 0 auto;
+.title h2 {
   font-size: 20px;
   font-weight: 900;
   color: #a7aaad;
+  font-family: "Fraunces";
+}
+
+.costumers {
+  display: flex;
+  margin-top: 81px;
+  gap: 30px;
 }
 
 .profile {
@@ -186,6 +215,7 @@ body {
   font-size: 18px;
   font-weight: 900;
   color: #24303e;
+  font-family: "Fraunces";
 }
 .profession-container p {
   font-size: 14px;
@@ -195,9 +225,17 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
+  width: 1440px;
+  height: 797px;
+}
+.footer-top-container {
+  display: flex;
+  width: 1440px;
+  height: 447px;
 }
 .footer-top-container img {
-  width: 357px;
+  width: 360px;
+  height: 447px;
 }
 .footer-bottom-container {
   display: flex;
@@ -210,6 +248,7 @@ body {
 }
 .footer-bottom-container .logo-cont img {
   width: 170px;
+  padding-top: 72px;
 }
 .nav-cont {
   margin: 0 auto;
