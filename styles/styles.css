@@ -9,15 +9,17 @@
 
 body {
   font-family: "Barlow";
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
+
   background-color: #80839740;
+}
+.main-container {
+  width: 1440px;
+  margin: 0 auto;
 }
 .background-container {
   background-image: url("../assets/images/background.png");
   height: 700px;
-  width: 100%;
+  width: 1440px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -27,6 +29,10 @@ body {
   justify-content: space-between;
   padding: 34px 40px 105px;
 }
+.header-container .burger-menu {
+  display: none;
+}
+
 .header-container nav ul,
 a {
   display: flex;
@@ -55,7 +61,7 @@ a {
   justify-content: center;
   font-family: "Fraunces";
 }
-.intro-container p {
+.intro-container h1 {
   padding-top: 105px;
   font-size: 56px;
   font-weight: 900;
@@ -71,98 +77,53 @@ a {
   width: 1440px;
   height: 600px;
 }
-.section-container {
-  width: 1440px;
-}
-.section-container img {
-  width: 720px;
-}
-
-.info-container {
+.mainContainer {
   display: flex;
-  width: 720px;
-  flex-direction: column;
-  padding: 158px 110px 157px 165px;
-  gap: 40px;
-  background-color: #fff;
+  flex-wrap: wrap;
 }
-.info-container h2 {
-  font-size: 40px;
+.titleContainer {
+  width: 720px;
+  height: 600px;
+  background-color: #fffcf8;
+}
+.titleContainer h2 {
+  color: #24303e;
   font-weight: 900;
-  color: #24303e;
-  padding-bottom: 32px;
-  width: 300px;
-  font-family: "Fraunces";
+  font-size: 40px;
+  width: 445px;
+  margin-bottom: 32px;
+  margin-left: 165px;
+  padding-top: 158px;
 }
-.info-container p {
-  width: 450px;
-  font-size: 18px;
-  font-weight: 600;
+.titleContainer p {
+  width: 445px;
+  margin-left: 165px;
+  line-height: 30px;
   color: #808397;
-  line-height: 1.5;
 }
-.info-container a {
-  color: #24303e;
-  width: 137px;
-}
-
-.standout-container {
-  display: flex;
-  width: 1440px;
+.photoContainer {
+  width: 720px;
   height: 600px;
 }
-.grafic-photography {
-  display: flex;
-  width: 1440px;
+.redAndYellowButton {
+  all: unset;
+  margin: 40px 0px 0px 173px;
+}
+.cherryCont {
+  width: 720px;
   height: 600px;
 }
-.cherry-container {
-  position: relative;
+.orangeCont {
+  width: 720px;
+  height: 600px;
 }
-.cherry-description {
-  position: absolute;
-  position: absolute;
-  top: 398px;
-  left: 50%;
-  transform: translate(-50%, 0%);
+.cherryCont {
+  background-image: url(../assets/images/cherry.png);
+  background-size: contain;
 }
-.cherry-description h2 {
-  font-size: 28px;
-  font-weight: #24554a;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 27px;
-  font-family: "Fraunces";
-}
-.cherry-description p {
-  color: #3e7467;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: center;
-}
-.orange-container {
-  position: relative;
-}
-.orange-description {
-  position: absolute;
-  position: absolute;
-  top: 398px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
-.orange-description h2 {
-  font-family: "Fraunces";
-  font-size: 28px;
-  font-weight: #19536c;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 27px;
-}
-.orange-description p {
-  color: #3e7467;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: center;
+.orangeCont {
+  background-image: url(../assets/images/orange.png);
+  background-size: contain;
 }
 /* client advices */
 .clients {
@@ -269,3 +230,51 @@ a {
   padding: 88px 0px 72px;
   gap: 28px;
 }
+
+@media (max-width: 375px) {
+  .background-container img {
+    width: 375px;
+  }
+}
+@media (max-width: 375px) {
+  .background-container {
+    background-image: url(../assets/images/orangefoto.png);
+    width: 375px;
+  }
+}
+@media (max-width: 375px) {
+  .header-container .burger-menu {
+    display: flex;
+  }
+}
+@media (max-width: 375px) {
+  nav {
+    width: 375px;
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .header-container img {
+    width: 123px;
+    height: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .intro-container {
+    display: flex;
+    width: 327px;
+    height: auto;
+    top: 136px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 375px) {
+  .intro-container h1 {
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+  }
+}
+/* <!-- main sections -->*/
